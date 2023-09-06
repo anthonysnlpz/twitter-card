@@ -3,10 +3,6 @@ import { TwitterFollowCard } from './TwitterFollowCard'
 
 export function App () {
 
-  // const cjt100903 = { InitialisFollowing: true, userName: 'cjt100903' }
-  // const webfazt = { InitialisFollowing: false, userName: 'webfazt' }
-  // const midudev = { InitialisFollowing: true, userName: 'midudev' }
-
   const users = [
     {
       isFollowing: true,
@@ -26,6 +22,10 @@ export function App () {
   ]
 
   return (
+    <>
+    <main className='container'>
+    <header className='title-header'>twitter follow card</header>
+    
     <section className='App'>
       {
         users.map( user => {
@@ -42,5 +42,10 @@ export function App () {
         })
       }
     </section>
+    <footer>
+      <p className='text-footer'>&copy;Anthony Solano López</p>
+    </footer>
+    </main>
+    </>
      )
 }
